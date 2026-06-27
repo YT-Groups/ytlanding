@@ -1,0 +1,355 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0D0D0D;
+  --ink: #F8F8F6;
+  --ink-muted: #9A9A96;
+  --rule: #F8F8F6;
+  --border: #2A2A28;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  padding: 48px 44px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HEADER ── */
+.site-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(22px, 4vw, 30px);
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+  line-height: 1;
+}
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 28px;
+  margin-bottom: 80px;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--rule);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+nav a.active {
+  color: var(--ink);
+}
+
+/* ── CONTENT AREA ── */
+.page {
+  display: none;
+  flex: 1;
+  animation: fadeIn 0.25s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── HOME ── */
+.home-statement {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.15;
+  max-width: 680px;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+}
+
+.home-sub {
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 400px;
+  line-height: 1.7;
+}
+
+/* ── PRODUCTS ── */
+.product-list {
+  list-style: none;
+  max-width: 560px;
+}
+
+.product-list li {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.product-list li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.product-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.product-tag {
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.product-desc {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-top: 4px;
+  line-height: 1.6;
+}
+
+.product-item {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+/* ── VENTURES ── */
+.ventures-intro {
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 440px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.venture-list {
+  list-style: none;
+  max-width: 560px;
+}
+
+.venture-list li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.venture-list li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.venture-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.venture-year {
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+/* ── TEAM ── */
+.team-intro {
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 440px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.team-list {
+  list-style: none;
+  max-width: 560px;
+}
+
+.team-item {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.team-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.team-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--ink);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.team-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--rule);
+  transition: width 0.3s ease;
+}
+
+.team-name:hover::after {
+  width: 100%;
+}
+
+.team-role {
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ── ABOUT ── */
+.about-text {
+  max-width: 520px;
+}
+
+.about-text p {
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── CONTACT ── */
+.contact-block {
+  max-width: 400px;
+}
+
+.contact-block p {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.contact-links {
+  list-style: none;
+}
+
+.contact-links li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.contact-links a {
+  color: var(--ink);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.contact-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--rule);
+  transition: width 0.3s ease;
+}
+
+.contact-links a:hover::after {
+  width: 100%;
+}
+
+.contact-label {
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 80px;
+}
+
+/* ── FOOTER ── */
+footer {
+  margin-top: auto;
+  padding-top: 60px;
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 480px) {
+  body {
+    padding: 36px 28px;
+  }
+
+  nav {
+    gap: 0 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page { animation: none; }
+  nav a::after, .contact-links a::after, .team-name::after { transition: none; }
+}
