@@ -3,175 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YT Groups</title>
+  <meta name="theme-color" content="#090a0a" />
+  <meta name="description" content="YT Groups is an independent technology studio building ambitious software from Accra, Ghana." />
+  <title>YT Groups — Independent Technology Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#" data-page="home" aria-label="YT Groups home">
+        <span class="brand-mark">YT<span>.</span></span>
+        <span class="brand-name">GROUPS<br><small>INDEPENDENT STUDIO</small></span>
+      </a>
 
-  <h1 class="site-name">yorke & toni </h1>
+      <nav aria-label="Main navigation">
+        <a href="#home" class="active" data-page="home" aria-current="page">Home</a>
+        <a href="#products" data-page="products">Products</a>
+        <a href="#ventures" data-page="ventures">Ventures</a>
+        <a href="#team" data-page="team">Team</a>
+        <a href="#about" data-page="about">About</a>
+        <a href="#contact" data-page="contact">Contact <span class="nav-arrow">↗</span></a>
+      </nav>
+      <div class="header-status"><i></i> ACCRA, GH · ONLINE</div>
+    </header>
 
-  <nav>
-    <a href="#" class="active" data-page="home">home</a>
-    <a href="#" data-page="products">products</a>
-    <a href="#" data-page="ventures">ventures</a>
-    <a href="#" data-page="team">team</a>
-    <a href="#" data-page="about">about</a>
-    <a href="#" data-page="contact">contact</a>
-  </nav>
+    <main>
+      <section class="page active" id="page-home" aria-label="Home">
+        <div class="hero">
+          <div class="hero-topline">
+            <span><b>01 /</b> DIGITAL THINKING, BUILT DIFFERENT</span>
+            <span class="hero-coordinate">5°36' N&nbsp; 0°11' W</span>
+          </div>
 
-  <!-- HOME -->
-  <section class="page active" id="page-home">
-    <p class="home-statement">Building the software<br>of Africa's future.</p>
-    <p class="home-sub">YT Groups is an IT consultancy and product studio headquartered in Ghana. We build software that users can get the most out of.</p>
-  </section>
+          <div class="hero-main">
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="eyebrow-star">✳</span> THE FUTURE ISN'T A TEMPLATE.</p>
+              <h1 class="hero-title" aria-label="YT"><span class="hero-mark" data-text="YT" aria-hidden="true">YT</span><span class="hero-period" aria-hidden="true">.</span></h1>
+              <div class="hero-bottom">
+                <h2>We make<br><em>what's next.</em></h2>
+                <div class="hero-intro">
+                  <p>An independent technology studio building useful, ambitious software from Accra, Ghana.</p>
+                  <a class="text-link" href="#products" data-page="products">EXPLORE OUR WORK <span>↘</span></a>
+                </div>
+              </div>
+            </div>
 
-  <!-- PRODUCTS -->
-  <section class="page" id="page-products">
-    <ul class="product-list">
-      <li class="product-item">
-        <div class="product-header">
-          <span class="product-name">SCOUT</span>
-          <span class="product-tag">Football Intelligence</span>
+            <div class="signal-art" aria-hidden="true">
+              <div class="signal-ring ring-one"></div>
+              <div class="signal-ring ring-two"></div>
+              <div class="signal-ring ring-three"></div>
+              <div class="signal-core"><span>YT</span></div>
+              <span class="signal-cross cross-one">+</span>
+              <span class="signal-cross cross-two">+</span>
+              <span class="signal-label">SIGNAL FOUND<br>GH / 2026</span>
+              <span class="signal-index">001—∞</span>
+            </div>
+          </div>
+
+          <div class="hero-footer">
+            <span class="scroll-cue"><span class="scroll-line"></span> SCROLL TO EXPLORE</span>
+            <span class="hero-manifesto">SOFTWARE WITH A POINT OF VIEW.</span>
+            <a class="hero-contact" href="#contact" data-page="contact">HAVE A GOOD ONE IN MIND? <span>LET'S TALK ↗</span></a>
+          </div>
+          <div class="hero-stamp" aria-hidden="true">Y<br><span>T</span></div>
         </div>
-        <p class="product-desc">ML-powered player scouting and performance analytics. Built on TONI, a proprietary regression engine.</p>
-      </li>
-      <li class="product-item">
-        <div class="product-header">
-          <span class="product-name">StudyBuddy</span>
-          <span class="product-tag">EdTech · AI</span>
+      </section>
+
+      <section class="page content-page" id="page-products" aria-label="Products">
+        <div class="section-heading"><span class="section-index">01 / WHAT WE'RE MAKING</span><h1>Our <em>products.</em></h1><p>Tools for real problems. Built to be useful, not just used.</p></div>
+        <ul class="product-list">
+          <li class="product-item"><div class="product-header"><span class="product-name">SCOUT</span><span class="product-tag">Football Intelligence</span></div><p class="product-desc">ML-powered player scouting and performance analytics. Built on TONI, a proprietary regression engine.</p><span class="list-arrow">↗</span></li>
+          <li class="product-item"><div class="product-header"><span class="product-name">StudyBuddy</span><span class="product-tag">EdTech · AI</span></div><p class="product-desc">An AI study assistant designed for Ghanaian university students. RAG architecture, spaced repetition, Claude-powered.</p><span class="list-arrow">↗</span></li>
+          <li class="product-item"><div class="product-header"><span class="product-name">ALPHA</span><span class="product-tag">Fintech · Trading</span></div><p class="product-desc">Advanced trading algorithm with Monte Carlo simulations, synthetic data modeling, and planned USSD accessibility.</p><span class="list-arrow">↗</span></li>
+          <li class="product-item"><div class="product-header"><span class="product-name">Maison</span><span class="product-tag">PropTech</span></div><p class="product-desc">A unified hostel ecosystem for the Ghanaian market — Maison Hunt, Maison Ops, Maison Stay.</p><span class="list-arrow">↗</span></li>
+        </ul>
+      </section>
+
+      <section class="page content-page" id="page-ventures" aria-label="Ventures">
+        <div class="section-heading"><span class="section-index">02 / LONG-TERM THINKING</span><h1>Our <em>ventures.</em></h1><p>Patient bets on ideas that can shift access and ownership across Africa.</p></div>
+        <p class="ventures-intro">YT Groups pursues long-term positions in sectors where technology can meaningfully reshape access and ownership in Africa.</p>
+        <ul class="venture-list">
+          <li><div class="venture-name">NEXUS</div><div class="venture-year">SaaS for microfinance institutions</div><span class="list-arrow">↗</span></li>
+          <li><div class="venture-name">AuGRAM</div><div class="venture-year">Cryptocurrency backed by small-scale gold mining</div><span class="list-arrow">↗</span></li>
+        </ul>
+      </section>
+
+      <section class="page content-page" id="page-team" aria-label="Team">
+        <div class="section-heading"><span class="section-index">03 / PEOPLE OVER PIXELS</span><h1>The <em>people.</em></h1><p>Small team. Big energy. Many tabs open.</p></div>
+        <ul class="team-list">
+          <li class="team-item"><a class="team-name" href="https://yorkeport.netlify.app/" target="_blank" rel="noopener">Kobby Essel <span>↗</span></a><span class="team-role">Machine Learning &amp; CEO</span></li>
+          <li class="team-item"><a class="team-name" href="https://portfolio-pearl-zeta-99.vercel.app/" target="_blank" rel="noopener">Mekitonima G. Aliodi <span>↗</span></a><span class="team-role">Backend &amp; CEO</span></li>
+          <li class="team-item"><a class="team-name" href="#" target="_blank" rel="noopener">Prince Appiah <span>↗</span></a><span class="team-role">Backend Developer</span></li>
+          <li class="team-item"><a class="team-name" href="#" target="_blank" rel="noopener">Kingsley Torkenubu <span>↗</span></a><span class="team-role">UI/UX Designer</span></li>
+          <li class="team-item"><a class="team-name" href="https://etornam-dev.vercel.app/" target="_blank" rel="noopener">Emmanuel Tetteh <span>↗</span></a><span class="team-role">Machine Learning Engineer</span></li>
+          <li class="team-item"><a class="team-name" href="#" target="_blank" rel="noopener">Arnold Narterh <span>↗</span></a><span class="team-role">UI/UX Designer</span></li>
+          <li class="team-item"><a class="team-name" href="#" target="_blank" rel="noopener">Caleb Ahenkorah <span>↗</span></a><span class="team-role">Team Member</span></li>
+        </ul>
+      </section>
+
+      <section class="page content-page" id="page-about" aria-label="About">
+        <div class="section-heading"><span class="section-index">04 / A LITTLE ABOUT US</span><h1>Made with <em>intent.</em></h1></div>
+        <div class="about-text">
+          <p>YT Groups, Yorke &amp; Toni Groups, is a technology company founded by Kobby Essel and Mekitonima Aliodi. We are a software product studio with a long-term vision of becoming a player in Ghana's technology sector.</p>
+          <p>We build products across fintech, prediction models, edtech, and proptech. Our work is shaped by a conviction that the best technology is built closest to the problems it solves.</p>
+          <p>Our goal is to create software solutions that our users can not live without.</p>
         </div>
-        <p class="product-desc">An AI study assistant designed for Ghanaian university students. RAG architecture, spaced repetition, Claude-powered.</p>
-      </li>
-      <li class="product-item">
-        <div class="product-header">
-          <span class="product-name">ALPHA</span>
-          <span class="product-tag">Fintech · Trading</span>
+      </section>
+
+      <section class="page content-page" id="page-contact" aria-label="Contact">
+        <div class="section-heading"><span class="section-index">05 / YOUR MOVE</span><h1>Let's make<br><em>something matter.</em></h1></div>
+        <div class="contact-block">
+          <p>YT Groups is based in Ghana. We are open to partnerships and collaboration.</p>
+          <ul class="contact-links">
+            <li><span class="contact-label">email</span><a href="mailto:info@yorkeandtoni.com">info@yorkeandtoni.com <span>↗</span></a></li>
+            <li><span class="contact-label">twitter</span><a href="https://twitter.com/ytconsulttch" target="_blank" rel="noopener">@ytconsulttch <span>↗</span></a></li>
+            <li><span class="contact-label">linkedin</span><a href="https://www.linkedin.com/company/ytgroups" target="_blank" rel="noopener">YT Groups <span>↗</span></a></li>
+          </ul>
         </div>
-        <p class="product-desc">Advanced trading algorithm with Monte Carlo simulations, synthetic data modeling, and planned USSD accessibility.</p>
-      </li>
-      <li class="product-item">
-        <div class="product-header">
-          <span class="product-name">Maison</span>
-          <span class="product-tag">PropTech</span>
-        </div>
-        <p class="product-desc">A unified hostel ecosystem for the Ghanaian market — Maison Hunt, Maison Ops, Maison Stay.</p>
-      </li>
-    </ul>
-  </section>
+      </section>
+    </main>
 
-  <!-- VENTURES -->
-  <section class="page" id="page-ventures">
-    <p class="ventures-intro">YT Groups pursues long-term positions in sectors where technology can meaningfully reshape access and ownership in Africa.</p>
-    <ul class="venture-list">
-      <li>
-        <div class="venture-name">NEXUS</div>
-        <div class="venture-year">SaaS for microfinance institutions</div>
-      </li>
-      
-      <li>
-        <div class="venture-name">AuGRAM</div>
-        <div class="venture-year">Cryptocurrency backed by small-scale gold mining</div>
-      </li>
-     
-    </ul>
-  </section>
-
-  <!-- TEAM -->
-  <!--
-    Each <li> is one team member.
-    - Edit the visible name
-    - Edit the role/title 
-    - Paste each person's portfolio URL into the href="#" below — that's
-      
-  -->
-  <section class="page" id="page-team">
-    <p class="team-intro">The people building YT Groups.</p>
-    <ul class="team-list">
-      <li class="team-item">
-        <a class="team-name" href="https://yorkeport.netlify.app/" target="_blank" rel="noopener">Kobby Essel</a>
-        <span class="team-role">Machine Learning &amp; CEO</span>
-      </li>
-      <li class="team-item">
-        <a class="team-name" href="https://portfolio-pearl-zeta-99.vercel.app/" target="_blank" rel="noopener">Mekitonima G. Aliodi</a>
-        <span class="team-role">Backend &amp; CEO</span>
-      </li>
-      <li class="team-item">
-        <a class="team-name" href="#" target="_blank" rel="noopener">Prince Appiah</a>
-        <span class="team-role">Backend Developer</span>
-      </li>
-      <li class="team-item">
-        <a class="team-name" href="#" target="_blank" rel="noopener">Kingsley Torkenubu</a>
-        <span class="team-role">UI/UX Designer</span>
-      </li>
-      <li class="team-item">
-        <a class="team-name" href="https://etornam-dev.vercel.app/" target="_blank" rel="noopener">Emmanuel Tetteh</a>
-        <span class="team-role">Machine Learning Engineer</span>
-      </li>
-      <li class="team-item">
-        <a class="team-name" href="#" target="_blank" rel="noopener">Arnold Narterh</a>
-        <span class="team-role">UI/UX Designer</span>
-      </li>
-      <li class="team-item">
-        <a class="team-name" href="#" target="_blank" rel="noopener">Caleb Ahenkorah</a>
-        <span class="team-role">Team Member</span>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="page" id="page-about">
-    <div class="about-text">
-      <p>YT Groups, Yorke & Toni Groups, is a technology company founded by Kobby Essel and Mekitonima Aliodi. We are a software product studio with a long-term vision of becoming a player in Ghana's technology sector.</p>
-      <p>We build products across fintech, prediction models, edtech, and proptech. Our work is shaped by a conviction that the best technology is built closest to the problems it solves.</p>
-      <p>Our goal is to create software solutions that our users can not live without.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="page" id="page-contact">
-    <div class="contact-block">
-      <p>YT Groups is based in Ghana. We are open to partnerships and collaboration.</p>
-      <ul class="contact-links">
-        <li>
-          <span class="contact-label">email</span>
-          <a href="mailto:info@yorkeandtoni.com">info@yorkeandtoni.com</a>
-        </li>
-        <li>
-          <span class="contact-label">twitter</span>
-          <a href="https://twitter.com/ytconsulttch" target="_blank" rel="noopener">@ytconsulttch</a>
-        </li>
-        <li>
-          <span class="contact-label">linkedin</span>
-          <a href="https://www.linkedin.com/company/ytgroups" target="_blank" rel="noopener">YT Groups</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2026 YT Groups · Accra, Ghana
-  </footer>
+    <footer><span>© 2026 YT GROUPS</span><span>INDEPENDENTLY BUILDING IN ACCRA, GHANA <b>✳</b></span><span>YORKE &amp; TONI GROUPS</span></footer>
+  </div>
 
   <script>
-    const links = document.querySelectorAll('nav a');
+    const links = document.querySelectorAll('[data-page]');
     const pages = document.querySelectorAll('.page');
 
     links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
+      link.addEventListener('click', event => {
+        event.preventDefault();
         const target = link.dataset.page;
+        const page = document.getElementById('page-' + target);
+        if (!page) return;
 
-        links.forEach(l => l.classList.remove('active'));
-        pages.forEach(p => p.classList.remove('active'));
-
-        link.classList.add('active');
-        document.getElementById('page-' + target).classList.add('active');
+        pages.forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('nav [data-page]').forEach(item => {
+          item.classList.remove('active');
+          item.removeAttribute('aria-current');
+        });
+        page.classList.add('active');
+        const activeLink = document.querySelector('nav [data-page="' + target + '"]');
+        activeLink.classList.add('active');
+        activeLink.setAttribute('aria-current', 'page');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
   </script>
-
 </body>
 </html>
